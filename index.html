@@ -10,7 +10,7 @@
     body {
       margin: 0;
       overflow: hidden;
-      background-color: black; /* Biar nggak silau pas loading */
+      background-color: black;
     }
 
     video {
@@ -20,37 +20,18 @@
       transform: translate(-50%, -50%);
       min-width: 100%;
       min-height: 100%;
-      width: auto;
-      height: auto;
       z-index: -1;
       object-fit: cover;
-    }
-    
-    .content {
-      z-index: 1;
-      position: relative;
-    }
-
-    #lyrics {
-      position: fixed;
-      bottom: 50px;
-      width: 100%;
-      text-align: center;
-      z-index: 2;
     }
   </style>
 </head>
 <body>
 
   <video autoplay loop muted playsinline>
-    <source src="gokil.mp4" type="video/mp4">
+    <source src="video/gokil.mp4" type="video/mp4">
   </video>
 
   <div id="lyrics"></div>
-
-  <div class="content">
-    <h1></h1>
-  </div>
 
   <div class="paper image">
     <p>Untuk ku</p>
